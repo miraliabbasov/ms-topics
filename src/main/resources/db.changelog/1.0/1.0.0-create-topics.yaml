@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create Topics table
+      author: MIRALI ABBASOV
+      changes:
+        - createTable:
+            tableName: topics
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(250)
+              - column:
+                  name: category
+                  type: varchar(250)
+              - column:
+                  name: price
+                  type: numeric(16,2)
+              - column:
+                  name: currency
+                  type: varchar(250)
+
+
+
+
+
